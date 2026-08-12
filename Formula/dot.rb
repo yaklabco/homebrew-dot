@@ -5,21 +5,21 @@
 class Dot < Formula
   desc "Type-safe symbolic link manager for dotfiles"
   homepage "https://github.com/yaklabco/dot"
-  version "0.6.6"
+  version "0.7.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yaklabco/dot/releases/download/v0.6.6/dot_0.6.6_Darwin_x86_64.tar.gz"
-      sha256 "45bfc5c38daa50a1124f51bb4fe911499417318c6993e336d1ec394fb4142d95"
+      url "https://github.com/yaklabco/dot/releases/download/v0.7.0/dot_0.7.0_Darwin_x86_64.tar.gz"
+      sha256 "cdd6f5d2ed3d6190ee50abcbf8f45a9e54ee7ac2285df78dc0629e02c8e9f688"
 
       def install
         bin.install "dot"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yaklabco/dot/releases/download/v0.6.6/dot_0.6.6_Darwin_arm64.tar.gz"
-      sha256 "66dd7938c3ae17865322fb5071465b96cf4802c38e50242f4331dd53b57a3cad"
+      url "https://github.com/yaklabco/dot/releases/download/v0.7.0/dot_0.7.0_Darwin_arm64.tar.gz"
+      sha256 "3618c0f65bb3bc54dc78cce0d2dcb056054dc9df1afe36f686b8179fd989e025"
 
       def install
         bin.install "dot"
@@ -29,15 +29,15 @@ class Dot < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yaklabco/dot/releases/download/v0.6.6/dot_0.6.6_Linux_x86_64.tar.gz"
-      sha256 "42bbfc4d66483d545183f537721c11a547138c2b037eb22bbd1511a424b2474e"
+      url "https://github.com/yaklabco/dot/releases/download/v0.7.0/dot_0.7.0_Linux_x86_64.tar.gz"
+      sha256 "b0155f73735082d8b9c888e7650d46d406d645da96118b4a9085bf185f377672"
       def install
         bin.install "dot"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yaklabco/dot/releases/download/v0.6.6/dot_0.6.6_Linux_arm64.tar.gz"
-      sha256 "6aeb3dc8d2bc5cde78e9b40dd6ded025a4f6c65f9f31c55e2de01d475e5fada9"
+      url "https://github.com/yaklabco/dot/releases/download/v0.7.0/dot_0.7.0_Linux_arm64.tar.gz"
+      sha256 "4cbadb0a8250f7192a35f0e5d9f7fb573f06039b87db6a95d5673999691b9a70"
       def install
         bin.install "dot"
       end
